@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memorias del Fútbol</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:white;
+text-align:center;
+}
+
+header{
+width:100%;
+}
+
+.menu{
+background:#111;
+padding:25px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-size:20px;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:gold;
+}
+
+.banner{
+background-image:url(img/imagen3.jpg);
+background-size:cover;
+background-position:center;
+height:400px;
+position:relative;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.banner::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.logo{
+position:relative;
+z-index:1;
+}
+
+.logo img{
+width:190px;
+max-width:90%;
+margin-bottom:10px;
+}
+
+.titulo{
+position:relative;
+z-index:1;
+}
+
+.titulo h1{
+font-size:45px;
+margin:5px;
+}
+
+.titulo span{
+color:gold;
+}
+
+main{
+width:100%;
+}
+
+.seccion{
+padding:50px;
+}
+
+.seccion h2{
+color:gold;
+}
+
+.descripcion{
+max-width:900px;
+margin:40px auto;
+font-size:18px;
+color:#ccc;
+text-align:justify;
+line-height:1.8;
+padding:0 15px;
+}
+
+footer{
+background:#111;
+padding:20px;
+font-size:14px;
+color:#aaa;
+margin-top:40px;
+}
+
+@media (max-width:735px){
+
+.menu{
+flex-direction:column;
+padding:15px;
+}
+
+.menu a{
+margin:10px;
+font-size:16px;
+}
+
+.banner{
+height:300px;
+}
+
+.logo img{
+width:150px;
+}
+
+.titulo h1{
+font-size:28px;
+}
+
+.descripcion{
+font-size:16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav class="menu">
+        <a href="index.html">INICIO</a>
+        <a href="historia.html">HISTORIA</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+
+    <div class="banner">
+        <div class="logo">
+            <img src="img/imagen2.jpg" alt "imagen del logo">
+        </div>
+
+        <div class="titulo">
+            <h1>HISTORIA Y LEYENDAS</h1>
+            <h1>DEL <span>FÚTBOL</span></h1>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="seccion">
+        <div class="descripcion">
+            <p>
+            El fútbol no es solo un deporte, es una pasión universal que ha logrado unir a millones de personas
+            alrededor del mundo a lo largo de la historia. Desde sus inicios hasta la actualidad, este deporte
+            ha sido escenario de momentos inolvidables que han marcado generaciones enteras.
+            </p>
+
+            <p>
+            En este blog exploramos las historias más importantes del fútbol, recordando partidos históricos,
+            grandes rivalidades y jugadores que se convirtieron en verdaderas leyendas. Cada uno de ellos dejó
+            una huella imborrable gracias a su talento, disciplina y amor por el juego.
+            </p>
+
+            <p>
+            Aquí podrás conocer más a fondo la trayectoria de figuras icónicas, sus logros, sus momentos más
+            destacados y todo aquello que los llevó a convertirse en referentes del deporte. Además, reviviremos
+            épocas doradas y analizaremos cómo el fútbol ha evolucionado con el paso del tiempo.
+            </p>
+
+            <p>
+            Este espacio está dedicado a todos los aficionados que sienten el fútbol como algo más que un juego,
+            como una emoción que se vive dentro y fuera de la cancha.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Memorias del Fútbol - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
