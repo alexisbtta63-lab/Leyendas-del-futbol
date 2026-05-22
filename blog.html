@@ -49,6 +49,17 @@ h1{
   transition:0.3s;
 }
 
+.oculto{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 1s;
+}
+
+.mostrar{
+  opacity:1;
+  transform:translateY(0);
+}
+
 .card:hover{
   transform:scale(1.05);
 }
@@ -85,87 +96,101 @@ h1{
 
 <div class="grid">
 
-<div class="card">
+<div class="card oculto">
 <a href="messi.html">
-<img src=imagen17.jpg>
+<img src="img/imagen6.jpg">
 <h3>Lionel Messi</h3>
 </a>
 <p>Leyenda del futbol mundial</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="cristiano.html">
-<img src=imagen5.jpg>
+<img src="img/imagen5.jpg">
 <h3>Cristiano Ronaldo</h3>
 </a>
 <p>Mister Champions</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="pele.html">
-<img src=imagen7.jpg>
+<img src="img/imagen7.jpg">
 <h3>Pele</h3>
 </a>
 <p>Rey del futbol</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="maradona.html">
-<img src=imagen8.jpg>
+<img src="img/imagen8.jpg">
 <h3>Maradona</h3>
 </a>
 <p>D10S</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="cruyff.html">
-<img src=imagen9.jpg>
+<img src="img/imagen9.jpg">
 <h3>Johan Cruyff</h3>
 </a>
 <p>El Holandes Volador</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="distefano.html">
-<img src=imagen10.jpg>
+<img src="img/imagen10.jpg">
 <h3>Di Stefano</h3>
 </a>
 <p>La Saeta Rubia</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="ronaldo.html">
-<img src=imagen11.jpg>
+<img src="img/imagen11.jpg">
 <h3>Ronaldo Nazario</h3>
 </a>
 <p>El Fenomeno</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="beckenbauer.html">
-<img src=imagen12.jpg>
+<img src="img/imagen12.jpg">
 <h3>Beckenbauer</h3>
 </a>
 <p>El Kaiser</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="puskas.html">
-<img src=imagen13.jpg>
+<img src="img/imagen13.jpg">
 <h3>Puskas</h3>
 </a>
 <p>Canoncito Pum</p>
 </div>
 
-<div class="card">
+<div class="card oculto">
 <a href="platini.html">
-<img src= imagen14.jpg>
+<img src="img/imagen14.jpg">
 <h3>Platini</h3>
 </a>
 <p>El Rey</p>
 </div>
 
 </div>
+
+<script>
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach((card, index) => {
+
+setTimeout(() => {
+card.classList.add("mostrar");
+}, index * 400);
+
+});
+
+</script>
 
 </body>
 </html>
