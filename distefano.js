@@ -1,6 +1,6 @@
 
 
-let textoTitulo = "Alfredo Di Stéfano";
+let textoTitulo = "Alfredo distefano";
 let i = 0;
 
 function escribirTitulo(){
